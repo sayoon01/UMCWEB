@@ -1,0 +1,79 @@
+.form-wrapper {
+    background-color : #91c6e2;
+    height: 100vh;
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+.form {
+    width: 550px;
+    height: 600px; /* 수정된 부분 */
+    display: flex;
+    flex-direction: column; /* 아이템들을 세로로 정렬하기 위해 추가 */
+    justify-content: center;
+    align-items: center;
+    background-color: #c1ddf2;
+    border-radius: 10px;
+    overflow: hidden; /* 내용이 넘칠 경우를 대비해 오버플로우를 숨깁니다. */
+}
+#loginForm h2 {
+    text-align: center;
+}
+#loginForm {
+    width: 45%; /* form 너비의 45% */
+    height: 95%; /* form 높이의 95% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤이 나타나도록 설정합니다. */
+}
+
+
+input {
+    border : 1px solid white;
+    border-radius: 5px;
+    background-color : #c1ddf2;
+    width: 100%; /* 수정된 부분 */
+    height : 20px;
+    margin-left: auto; /* 왼쪽 여백을 모두 차지하고 가운데 정렬됩니다. */
+    margin-right: auto; /* 오른쪽 여백도 모두 차지하고 가운데 정렬됩니다. */
+    margin-bottom: 10px; /* 입력란 사이의 간격 추가 */
+}
+.input-container {
+    margin-bottom: 15px;
+    display: block;
+    align-items: center;
+    
+}
+
+.input-container .input-label {
+    margin-right: 10px;
+}
+.input-label {
+    width : 180px;
+}
+.error {
+    margin-left: 10px;
+    display: none;
+    font-size: 12px; /* 글꼴 크기를 줄임 */
+    white-space: nowrap; /* 한 줄로 표시 */
+}
+
+/* 에러가 있을 때만 보이도록 표시합니다. */
+.error.active {
+    display: block;
+}
+#btn {
+    width: 100%; /* 수정된 부분 */
+    height : 50px;
+    background-color: #757475;
+    border-radius: 5px;
+    border : none;
+    margin-top: 5px; /* 버튼 위 간격 추가 */
+}
+h1 {
+    text-align: center;
+}

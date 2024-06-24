@@ -1,0 +1,71 @@
+body {
+    background-color : #ecf0f6;
+    width: auto;
+}
+.todo-container {
+    position : fixed;
+    top : 0;
+    left: 0;
+    bottom : 0;
+    right: 0;
+    /* 박스 위치 고정 */
+    display:flex;
+    /* 수평수직 정렬 */
+    justify-content: center;
+    /* align-items: center; */
+}
+.todo-body {
+    width:600px;
+}
+.todo-title {
+    margin : 50px;
+    text-align: center;
+}
+input {
+    width:600px;
+    height:50px;
+    border: 2px solid black;
+}
+input:hover {
+    border-color: blue; /* Change border color to blue when input is focused */
+    outline: none; /* Remove the default outline */
+}
+.todo-list, .done-list {
+    display: inline-block;
+    width : 200px;
+    font-weight: bolder;
+    margin-top : 30px;
+}
+.todo-list{
+    margin-right: 35px;
+    margin-left : 35px;
+}
+.done-list {
+    margin-left : 35px;
+}
+table {
+    width:160px;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+#list-title, hr, tr {
+    border-top-width: 15px;
+    border-bottom: solid #bbd2ea 2px;
+    padding: 2px;
+}
+
+tr {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+td #btn {
+    text-align : right;
+}
+
+button {
+    font-size: 15px;
+    background-color: #bbd2ea;
+    border: none;
+}

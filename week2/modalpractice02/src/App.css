@@ -1,0 +1,28 @@
+
+.modal-wrapper{
+  position : fixed;
+  top : 0;
+  left : 0;
+  width: 100%; /* 부모 요소의 너비를 사용하여 너비 조정 */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+/* 뷰포트 높이를 사용하여 높이 조정 */
+}
+
+.modal-content {
+  /* modal 스타일링 */
+  width: 400px;
+  height: 150px;
+  background-color:white;
+  align-content: center;
+  padding : 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size : 25px;
+}
+

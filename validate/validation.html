@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>회원가입 validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+    <body>
+      
+      <div class="form-wrapper">
+        <div class="form">
+          <form id="loginForm">
+            <h2>회원가입</h2>
+            <hr>
+            
+            <div class="input-container">
+                <div class="input-label">이름</div>
+                <input type="text" name="name" id="name">
+                <div id="nameError" class="error"></div>
+            </div>
+        
+            <div class="input-container">
+                <div class="input-label">이메일</div>
+                <input type="text" name="email" id="email">
+                <div id="emailError" class="error"></div>
+            </div>
+        
+            <div class="input-container">
+                <div class="input-label">나이</div>
+                <input type="text" name="age" id="age">
+                <div id="ageError" class="error"></div>
+            </div>
+        
+            <div class="input-container">
+                <div class="input-label">비밀번호</div>
+                <input type="password" name="pwd" id="pwd">
+                <div id="pwdError" class="error"></div>
+            </div>
+        
+            <div class="input-container">
+                <div class="input-label">비밀번호 확인</div>
+                <input type="password" name="pwdCheck" id="pwdCheck">
+                <div id="pwdCheckError" class="error"></div>
+            </div>
+            
+            <button id="submitBtn" class="f2">가입하기</button>
+        </form>
+        </div>
+      </div>
+     
+    
+      <script src="./src/validation.js"></script>
+    </body>
+</html>

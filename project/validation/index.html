@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>회원 가입 페이지</title>
+  <script>
+    function validateForm() {
+      // 이름 유효성 검사
+      var name = document.forms["signupForm"]["name"].value;
+      if (name == "") {
+        alert("이름을 입력해주세요.");
+        return false;
+      }
+
+      // 이메일 유효성 검사
+      var email = document.forms["signupForm"]["email"].value;
+      if (email == "") {
+        alert("이메일을 입력해주세요.");
+        return false;
+      }
+      if (email.indexOf("@") == -1) {
+        alert("올바른 이메일 형식이 아닙니다.");
+        return false;
+      }
+
+      // 나이 유효성 검사
+      var age = document.forms["signupForm"]["age"].value;
+      if (age == "") {
+        alert("나이를 입력해주세요.");
+        return false;
+      }
+      if (isNaN(age)) {
+        alert("숫자를 입력해주세요.");
+        return false;
+      }
+      if (age < 0) {
+        alert("나이는 음수가 될 수 없습니다.");
+        return false;
+      }
+      if (age % 1 !== 0) {
+        alert("나이는 소수가 될 수 없습니다.");
+        return false;
+      }
+      if (age < 19) {
+        alert("우리 영화 사이트는 19살 이상만 가입이 가능합니다.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>회원 가입</h2>
+  <form name="signupForm" onsubmit="return validateForm()" method="post">
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">이메일:</label>
+    <input type="text" id="email" name="email"><br><br>
+    <label for="age">나이:</label>
+    <input type="text" id="age" name="age"><br><br>
+    <input type="submit" value="가입하기">
+  </form>
+</body>
+</html>
